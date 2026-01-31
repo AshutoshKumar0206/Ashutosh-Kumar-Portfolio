@@ -32,37 +32,23 @@ const Hero = () => {
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
             BTech Computer Science at BIT Mesra | Passionate about building scalable web applications and solving complex problems
           </p>
-
-          {/* <div className="flex justify-center mb-12">
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/Ashutosh_Kumar_Resume.pdf" // Ensure this file is in your /public folder
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-8 py-3 bg-primary text-white font-bold rounded-full shadow-lg shadow-primary/30 hover:bg-opacity-90 transition-all cursor-pointer"
-            >
-              <FaFileDownload />
-              Download Resume
-            </motion.a>
-          </div> */}
           
           {/* Contact Links */}
           <div className="flex justify-center gap-6 mb-12">
-            <a href="mailto:ashutoshkumar200302@gmail.com" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
+            <a href={`mailto:${import.meta.env.VITE_EMAIL}`} className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <FaEnvelope className="text-xl" />
             </a>
-            <a href="tel:+917488894432" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
+            <a href={`tel:${import.meta.env.VITE_NUMBER}`} className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <FaPhone className="text-xl" />
             </a>
-            <a href="https://linkedin.com/in/ashutosh0203" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
+            <a href={`${import.meta.env.VITE_LINKEDIN}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <FaLinkedin className="text-xl" />
             </a>
-            <a href="https://github.com/AshutoshKumar0206" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
+            <a href={`${import.meta.env.VITE_GITHUB}`} target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-800 rounded-full hover:bg-primary transition-colors">
               <FaGithub className="text-xl" />
             </a>
             <a 
-              href="https://drive.google.com/file/d/1jAL4JLh7IdRdpUnQj6aj4fdbuWFQ-0Eb/view?usp=drive_link" 
+              href={`${import.meta.env.VITE_RESUME}`} 
               target="_blank" 
               className="flex items-center gap-2 px-5 py-3 bg-primary rounded-full font-bold text-sm hover:scale-105 transition-transform"
             >

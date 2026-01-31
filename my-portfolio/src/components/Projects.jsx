@@ -17,9 +17,9 @@ const Projects = () => {
         "Integrated NLP-based AI model with Flask APIs"
       ],
       links: {
-        website: "https://online-assignment-portal-frontend.vercel.app/",
-        frontend: "https://github.com/Online-Assignment-Submission-Portal/Online-Assignment-Frontend",
-        backend: "https://github.com/AshutoshKumar0206/Online-Assignment-Backend"
+        website: `${import.meta.env.VITE_LINK}`,
+        frontend: `${import.meta.env.VITE_FRONTEND_COLLEGEHUB}`,
+        backend: `${import.meta.env.VITE_BACKEND_COLLEGEHUB}`
       }
     },
     {
@@ -34,8 +34,8 @@ const Projects = () => {
         "Implemented RESTful APIs using Flask for backend integration in an AI application, enabling seamless communication between Frontend and NLP based AI model.",
       ],
       links: {
-        frontend: "https://github.com/AshutoshKumar0206/Madhav",
-        backend: "https://github.com/AshutoshKumar0206/Madhav"
+        frontend: `${import.meta.env.VITE_FRONTEND_MADHAV}`,
+        backend: `${import.meta.env.VITE_FRONTEND_MADHAV}`
       }
     }
   ];
@@ -129,10 +129,10 @@ const Projects = () => {
                 <div className="p-4 bg-gray-800/50 rounded-lg">
                   <h4 className="text-lg font-semibold text-primary">Coding Profiles</h4>
                   <div className="flex gap-4 mt-2">
-                    <a href="https://leetcode.com/u/AshutoshKumar03/" className="px-4 py-2 bg-yellow-600/20 rounded-lg hover:bg-yellow-600/30">
+                    <a href={`${import.meta.env.VITE_LEETCODE}`} className="px-4 py-2 bg-yellow-600/20 rounded-lg hover:bg-yellow-600/30">
                       LeetCode
                     </a>
-                    <a href="https://codeforces.com/profile/Ashutosh103" className="px-4 py-2 bg-red-600/20 rounded-lg hover:bg-red-600/30">
+                    <a href={`${import.meta.env.VITE_CODEFORCES}`} className="px-4 py-2 bg-red-600/20 rounded-lg hover:bg-red-600/30">
                       Codeforces
                     </a>
                   </div>
